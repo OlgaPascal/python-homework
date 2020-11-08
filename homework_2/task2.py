@@ -3,10 +3,10 @@
 # При нечетном количестве элементов последний сохранить на своем месте.
 # Для заполнения списка элементов необходимо использовать функцию input().
 
-# mylist_str = input("enter number separated by comma")
-# mylist = mylist_str.split(",")
+mylist_str = input("enter number separated by comma")
+mylist = mylist_str.split(",")
 
-mylist = [0, 1, 3, 2, 4, 5, 7, 9, 10]
+# mylist = [0, 1, 3, 2, 4, 5, 7, 9, 10]
 new = []
 last = len(mylist)
 for el in range(len(mylist)):
