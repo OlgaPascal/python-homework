@@ -9,9 +9,19 @@ while True:
         if selected_month in months:
             print(time)
     # let's print month name
-    d = {}
-    month_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
-                  "November", "December"]
-    for month in month_list:
-        d[month_list.index(month)] = month
-    print(d[selected_month-1])
+
+
+
+
+
+
+
+
+
+
+    # d = {}
+    # month_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+    #               "November", "December"]
+    # for month in month_list:
+    #     d[month_list.index(month)] = month
+    # print(d[selected_month-1])
