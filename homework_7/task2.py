@@ -20,6 +20,7 @@ class Clothes(ABC):
 
 class Coat(Clothes):
     def __init__(self, V):
+        print(f"Размер: {V}")
         self.V = V
 
     def calc_expenses(self):
@@ -31,7 +32,7 @@ class Coat(Clothes):
 
     @property
     def expenses(self):
-        return f"Expenses: {self.calc_expenses()}"
+        return f"Расход на пальто: {self.calc_expenses()}"
 
     def __str__(self):
         return 'Coat, size:' + str(self.V)
@@ -39,6 +40,7 @@ class Coat(Clothes):
 
 class Suit(Clothes):
     def __init__(self, H):
+        print(f"Высота: {H}")
         self.H = H
 
     def calc_expenses(self):
@@ -46,7 +48,7 @@ class Suit(Clothes):
 
     @property
     def expenses(self):
-        return f"Expenses: {self.calc_expenses()}"
+        return f"Расход на костюм: {self.calc_expenses()}"
 
     @property
     def h(self):
@@ -57,12 +59,12 @@ class Suit(Clothes):
 
 
 c = Coat(10)
-print(c.v)
+# print(c.v)
 print(c.calc_expenses())
 print(c.expenses)
 
 s = Suit(2)
-print(s.h)
+# print(s.h)
 s.calc_expenses()
 print(s.expenses)
 
